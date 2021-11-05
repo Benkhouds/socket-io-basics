@@ -1,0 +1,102 @@
+body {
+  padding: 7rem 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+h1 {
+  color: gray;
+  margin-bottom: 2rem;
+}
+label {
+  color: #8bbdee;
+  display: inline-block;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+select,
+input,
+textarea {
+  border: 1px solid rgba(145, 142, 142, 0.616);
+  outline: none;
+  padding: 0.8rem 1rem;
+  width: 20rem;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 1.5rem;
+  resize: none;
+}
+select {
+  width: 16rem;
+}
+#channel-form {
+  display: flex;
+}
+#channel-form button {
+  height: 100%;
+  padding: 0.7rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(233, 115, 115);
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+#message-form button {
+  cursor: pointer;
+  background-color: rgb(233, 115, 115);
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.sent {
+  text-align: right;
+  background-color: rgb(168, 181, 238);
+  color: white;
+  float: right;
+  margin-right: 8px;
+}
+.received {
+  background-color: rgb(230, 135, 198);
+  color: white;
+  float: left;
+}
+.sent,
+.received {
+  clear: both;
+  max-width: 20rem;
+  word-wrap: break-word;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.second-container {
+  width: 20rem;
+  height: 50vh;
+}
+.messages-container {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}

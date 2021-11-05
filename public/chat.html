@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ 
+  <div class="first-container">
+     <h1 class="send-message">Chat App</h1>
+     <form id="channel-form">
+        <select value="general">
+          <option value="general">General</option>
+          <option value="dev">Dev</option>
+        </select>
+        <button type="submit">Submit</button>
+     </form>
+     <form id="message-form">
+       <input type="text" id="name" name="name" placeholder="Your Name ...">
+       <label for="message">Send Your Message</label>
+       <textarea placeholder="your message.."id="message" rows="8" required></textarea>
+       <button>Submit</button>
+     </form>
+   </div>
+   <div class="second-container">
+       <h1>Your Messages</h1>
+       <div class="messages-container">
+
+       </div>
+   </div>
+   
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="./main.js"></script>
+</body>
+</html>
