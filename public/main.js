@@ -9,6 +9,7 @@
    }
    const socket = io('http://localhost:8080') ;
    socket.on('connect', ()=>{
+      initializeChannel('/general');
       console.log("connected")
    })
    socket.on('messageFromServer',(dataFormServer)=>{
